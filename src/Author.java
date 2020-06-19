@@ -9,7 +9,7 @@ public class Author extends Person {
 
     public Author(String firstName, String lastName) {
         super(firstName, lastName);
-        books = new ArrayList<>();
+        books = new ArrayList<String>();
     }
 
     /**
@@ -18,6 +18,7 @@ public class Author extends Person {
     @Deprecated
     public List<String> getBooks() {
         return books;
+//        books = new ArrayList<String>();
     }
 
     public List<String> publishedBooks() {
